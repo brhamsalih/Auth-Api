@@ -6,13 +6,13 @@ const sendEmail = async (name, email, subject, message) => {
     port: 465,
     secure: true,
     auth: {
-      user: "ibrahim.salih.f9@gmail.com",
-      pass: "dsev osyi srwo rzru",
+      user: "your-email@gmail.com",
+      pass: "your-passwrod",
     },
   });
 
   const mailOptions = {
-    from: "ibrahim.salih.f9@gmail.com",
+    from: "your-email@gmail.com",
     to: email,
     subject,
     text: `Dear: ${name}\n ${message}`,
